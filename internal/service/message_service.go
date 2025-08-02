@@ -5,6 +5,6 @@ import (
 	"learn-go/internal/repository"
 )
 
-func GetMessages() []model.Message {
+func GetMessages() ([]model.Message, error) {
     return repository.GetAllMessages()
 }
